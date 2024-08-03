@@ -17,6 +17,8 @@ gem 'rack-cors'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
+gem 'bcrypt', '~> 3.1.7'
+gem 'knock'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
