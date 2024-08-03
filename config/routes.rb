@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'user_token/create'
   namespace :api do
     namespace :v1 do
       post 'gravity_forms/fetch_and_save/:company_name', to: 'gravity_forms#fetch_and_save'
