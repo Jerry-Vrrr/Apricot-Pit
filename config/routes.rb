@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post '/user_token', to: 'user_token#create'
   namespace :api do
     namespace :v1 do
       get 'call_rail_data/fetch_and_store', to: 'call_rail_data#fetch_and_store'
