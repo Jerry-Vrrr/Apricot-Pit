@@ -1,5 +1,6 @@
-# app/models/user.rb
 class User < ApplicationRecord
+  include Knock::Authenticable
+
   has_secure_password
 
   enum role: { admin: 'admin', employee: 'employee', client: 'client' }
