@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  include Knock::Authenticable
+  # include Knock::Authenticable
 
   has_secure_password
 
