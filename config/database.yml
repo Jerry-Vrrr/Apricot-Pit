@@ -17,5 +17,5 @@ test:
 production:
   <<: *default
   database: my_dashboard_api_production
-  username: "jerryvohrer@gmail.com"
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  username: "apricot_pit_pg_user"
+  password: "H9ZgwRKrrgnI3G0vWooHp0ITHou1hddD"
