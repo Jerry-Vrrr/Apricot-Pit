@@ -2,9 +2,9 @@ default: &default
   adapter: postgresql
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
-  username: "jerryvohrer@gmail.com"
-  password: "cmr!zJEMS!Xyn6B"
-  host: localhost
+  username: "apricot_pit_pg_user"
+  password: "H9ZgwRKrrgnI3G0vWooHp0ITHou1hddD"
+  host: <%= ENV['DATABASE_HOST'] || 'localhost' %>
 
 development:
   <<: *default
@@ -16,6 +16,4 @@ test:
 
 production:
   <<: *default
-  database: my_dashboard_api_production
-  username: "apricot_pit_pg_user"
-  password: "H9ZgwRKrrgnI3G0vWooHp0ITHou1hddD"
+  database: mysite_production
