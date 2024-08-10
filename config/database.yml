@@ -18,4 +18,4 @@ production:
   <<: *default
   database: my_dashboard_api_production
   username: "jerryvohrer@gmail.com"
-  password: <%= ENV['MY_DASHBOARD_API_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
