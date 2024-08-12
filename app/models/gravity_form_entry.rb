@@ -1,2 +1,0 @@
-class GravityFormEntry < ApplicationRecord
-end
