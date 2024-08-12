@@ -11,4 +11,3 @@
 #     self.class.get('/calls.json?company_id=788957891', options)
 #   end
 # end
-
